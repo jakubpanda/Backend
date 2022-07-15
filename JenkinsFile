@@ -15,9 +15,9 @@ pipeline {
 
 
     stages {
-  stage('clone repository') {
+  stage('Get Code') {
     steps {
-      git branch: 'main', url: 'https://github.com/jakubpanda/Backend.git'
+      checkout scm
     }
   }
 
